@@ -21,7 +21,7 @@ for name in names:
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
-ages = root.cssselect("td div: nth child")
+ages = root.cssselect("td div: nth child [2]")
 print ages
 print record
 
