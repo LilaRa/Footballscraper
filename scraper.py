@@ -18,7 +18,7 @@ for name in names:
   record ['name'] = name .text.encode
   print record
   scraperwiki.sqlite.save(unique_keys=['link'], data=record) 
-  age = root.cssselect("</div> <div style)
+  ages = root.cssselect("</div> <div style)
   for age in names:
   #print age.text
   print age.attrib ['href']
