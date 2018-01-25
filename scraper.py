@@ -17,18 +17,12 @@ for name in names:
   record ['link']=name.attrib['href']
   record ['name'] = name .text.encode
   print record
-  scraperwiki.sqlite.save(unique_keys=['link'], data=record) 
-  ages = root.cssselect("</div> <div style)
-  for age in names:
-  #print age.text
-  print age.attrib ['href']
-  record ['link']=age.attrib['href']
-  record ['age'] = age .text.encode
-  print record
   scraperwiki.sqlite.save(unique_keys=['link'], data=record)                     
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
+ages = root.cssselect("td div:nth-child 2")
+
 # # An arbitrary query against the database
 # scraperwiki.sql.select("* from data where 'name'='peter'")
 
